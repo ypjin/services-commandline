@@ -1,0 +1,25 @@
+{
+  "name"          : "services-commandline",
+  "description"   : "Commands for the Service layer.",
+  "homepage"      : "",
+  "keywords"      : [],
+  "author"        : "dkuffner@chilicat.net",
+  "contributors"  : [ ],
+  "repository"    : {"type": "git", "url": "git://github.com/chilicat/services-commandline.git"},
+  "main"          : "./commands/commandlist_service",
+  "directories" : { "lib" : "./lib"	},
+  "version"       : "0.0.1",
+  "services"      : [
+      { 
+        "name": "Services API Commands",
+        "module": "./commands/commandlist_service",
+        "provides": [ "commandline-commandlist" ],  
+        "consumes": [{
+            "serviceClass": "services-api",
+            "set": "setServiceApi",
+            "unset": "unsetServiceApi",
+            "cardinality": "1..1"
+        }]
+      }
+  ]
+}
