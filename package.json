@@ -8,7 +8,7 @@
   "repository"    : {"type": "git", "url": "git://github.com/chilicat/services-commandline.git"},
   "main"          : "./commands/commandlist_service",
   "directories" : { "lib" : "./lib"	},
-  "version"       : "0.0.1",
+  "version"       : "0.0.2",
   "services"      : [
       { 
         "name": "Services API Commands",
